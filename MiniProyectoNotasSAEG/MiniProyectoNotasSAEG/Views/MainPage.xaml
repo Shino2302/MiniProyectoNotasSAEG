@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiniProyectoNotasSAEG.MainPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Style.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="BackgroundColor" Value="#56AAFF"/>
+                    <Setter Property="FontSize" Value="45"/>
+                    <Setter Property="FontSize" Value="50"/>
+                    <Setter Property="FontSize" Value="55"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </ContentPage.Resources>
+    <Grid Padding="10,20,10,0" BackgroundColor="#FFAA79">
+        <CollectionView ItemsSource="{Binding TusNotas}"
+                        SelectionMode="Single"
+                        SelectedItem="{Binding NotaSeleccionada}"
+                        SelectionChangedCommand="{Binding CambioAVentanaModificarCommand}"
+                        Grid.Row="0"
+                        HeightRequest="600"
+                        >
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                                 Span="2"
+                                 HorizontalItemSpacing="10"
+                                 VerticalItemSpacing="15"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="20,20"
+                           CornerRadius="10"
+                           Padding="5,10,5,-15">
+                        <StackLayout HorizontalOptions="Center">
+                            <Label Text="{Binding TituloNota}"
+                                   TextColor="Black"
+                                   FontAttributes="Bold,Italic"
+                                   FontSize="20"
+                                   Margin="0,0,0,0"
+                                   HorizontalOptions="Center"/>
+                            <ScrollView HeightRequest="80"
+                                        WidthRequest="180"
+                                        HorizontalOptions="Center"
+                                        IsEnabled="False">
+                                <Editor Text="{Binding Nota}"
+                                        TextColor="Black"
+                                        HorizontalOptions="Center"
+                                        FontSize="16"
+                                        FontAttributes="Italic"
+                                        IsReadOnly="True"
+                                        />
+                            </ScrollView>
+                            <Line X1="200"
+                                  Y1="2"
+                                  X2="0"
+                                  Y2="2"
+                                  Stroke="Black"
+                                  HorizontalOptions="Center"
+                                  Margin="0,-50,0,10"/>
+                            <Line X1="200"
+                                  Y1="2"
+                                  X2="0"
+                                  Y2="2"
+                                  Stroke="Black"
+                                  HorizontalOptions="Center"
+                                  Margin="0,3,0,10"/>
+                            <Line X1="200"
+                                  Y1="2"
+                                  X2="0"
+                                  Y2="2"
+                                  Stroke="Black"
+                                  HorizontalOptions="Center"
+                                  Margin="0,8,0,10"/>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Button Text="+"
+                Grid.Row="0"
+                VerticalOptions="End"
+                HorizontalOptions="End"
+                Margin="0,0,20,30"
+                CornerRadius="50"
+                Padding="40,20"
+                FontSize="35"
+                FontAttributes="Bold"
+                Command="{Binding CambioAVentanaAgregarCommand}"
+                BackgroundColor="#A48F"/>
+    </Grid>
+</ContentPage>

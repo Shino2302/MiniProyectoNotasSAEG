@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiniProyectoNotasSAEG.Views.AgregarNota"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <!--<Style TargetType="Button">
+            <Style.Triggers>
+                <MultiTrigger TargetType="Button" x:Uid="BotonAgregar">
+                    <MultiTrigger.Conditions>
+                        <PropertyCondition Property="IsEnabled" Value="True"/>
+                        <BindingCondition Binding="{Binding Source={x:Reference }, Path=}" Value="" />
+                        
+                    </MultiTrigger.Conditions>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>-->
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FFAA79">
+            <Grid>
+                <Frame Margin="18,40,18,12"
+                       HasShadow="False"
+                       CornerRadius="10">
+                    <StackLayout>
+                        <Entry Placeholder="Aquí va tu Titulo!" 
+                               PlaceholderColor="Black"
+                               FontAttributes="Bold,Italic"
+                               FontSize="40"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalTextAlignment="Center"
+                               TextColor="Black"
+                               Margin="0,5,0,10"
+                               Text="{Binding Titulo}"/>
+                        <ScrollView HorizontalScrollBarVisibility="Always"
+                                    HeightRequest="500">
+                            <StackLayout>
+                                <Editor Text="{Binding Nota}"
+                                        TextColor="Black"
+                                        Placeholder="Aquí van tus notas!!!"
+                                        PlaceholderColor="Black"
+                                        AutoSize="TextChanges"
+                                        FontAttributes="Italic"
+                                        />
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                </Frame>
+                <Button Text="«"
+                        BackgroundColor="#DE24"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        Margin="2,1,0,0"
+                        CornerRadius="50"
+                        FontSize="32"
+                        Padding="12"
+                        Command="{Binding AlMenuCommnad}"/>
+                <Button Text="Agregar"
+                        Command="{Binding AgregarNotaCommand}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        FontSize="35"
+                        Margin="0,0,0,-70"
+                        CornerRadius="50"
+                        FontAttributes="Bold"
+                        Padding="20"
+                        BackgroundColor="#ED8"
+                        TextColor="#FFF"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
