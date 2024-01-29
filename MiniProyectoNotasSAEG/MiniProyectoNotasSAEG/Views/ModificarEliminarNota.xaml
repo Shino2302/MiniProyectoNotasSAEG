@@ -79,7 +79,7 @@
                              BackgroundColor="#CAF8"
                              WidthRequest="120"
                              />
-                <Line X1="390"
+                <!--<Line X1="320"
                       Y1="2"
                       X2="1"
                       Y2="2"
@@ -230,7 +230,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,554,0,0"/>
+                      --><!--Margin="0,554,0,0"/>-->
             </Grid>
         </StackLayout>
     </ContentPage.Content>
