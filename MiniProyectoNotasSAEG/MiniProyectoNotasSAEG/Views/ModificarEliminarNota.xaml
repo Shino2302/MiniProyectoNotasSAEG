@@ -79,14 +79,6 @@
                              BackgroundColor="#CAF8"
                              WidthRequest="120"
                              />
-                <!--<Line X1="390"
-                      Y1="2"
-                      X2="1"
-                      Y2="2"
-                      Stroke="Black"
-                      HorizontalOptions="Center"
-                      VerticalOptions="Center"
-                      Margin="0,-327,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -94,7 +86,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,-275,0,0"/>
+                      Margin="0,-340,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -102,7 +94,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,-220,0,0"/>
+                      Margin="0,-290,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -110,7 +102,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,-165,0,0"/>
+                      Margin="0,-240,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -118,7 +110,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,-112,0,0"/>
+                      Margin="0,-192,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -126,7 +118,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,-55,0,0"/>
+                      Margin="0,-142,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -134,7 +126,23 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,0,0,0"/>
+                      Margin="0,-95,0,0"/>
+                <Line X1="390"
+                      Y1="2"
+                      X2="1"
+                      Y2="2"
+                      Stroke="Black"
+                      HorizontalOptions="Center"
+                      VerticalOptions="Center"
+                      Margin="0,-50,0,0"/>
+                <Line X1="390"
+                      Y1="2"
+                      X2="1"
+                      Y2="2"
+                      Stroke="Black"
+                      HorizontalOptions="Center"
+                      VerticalOptions="Center"
+                      Margin="0,05,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -150,7 +158,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,108,0,0"/>
+                      Margin="0,105,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -158,7 +166,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,165,0,0"/>
+                      Margin="0,152,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -166,7 +174,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,216,0,0"/>
+                      Margin="0,205,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -174,7 +182,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,275,0,0"/>
+                      Margin="0,250,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -182,7 +190,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,330,0,0"/>
+                      Margin="0,302,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -190,7 +198,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,385,0,0"/>
+                      Margin="0,350,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -198,7 +206,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,437,0,0"/>
+                      Margin="0,400,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -206,7 +214,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,493,0,0"/>
+                      Margin="0,450,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -214,7 +222,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,552,0,0"/>
+                      Margin="0,500,0,0"/>
                 <Line X1="390"
                       Y1="2"
                       X2="1"
@@ -222,16 +230,7 @@
                       Stroke="Black"
                       HorizontalOptions="Center"
                       VerticalOptions="Center"
-                      Margin="0,606,0,0"/>
-                <Line X1="390"
-                      Y1="2"
-                      X2="1"
-                      Y2="2"
-                      Stroke="Black"
-                      HorizontalOptions="Center"
-                      VerticalOptions="Center"
-                      Margin="0,654,0,0"/>-->
-
+                      Margin="0,554,0,0"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>
