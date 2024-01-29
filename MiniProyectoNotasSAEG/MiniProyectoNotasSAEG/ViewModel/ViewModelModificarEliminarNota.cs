@@ -19,6 +19,7 @@ namespace MiniProyectoNotasSAEG.ViewModel
         private string _titulo;
         private string _nota;
         private ModelNotas _notaElegida;
+        private bool _activador;
         #endregion
         #region CONSTRUCTOR
         public ViewModelModificarEliminarNota(INavigation navigation, ModelNotas notaSeleccionada)
@@ -45,6 +46,11 @@ namespace MiniProyectoNotasSAEG.ViewModel
             get { return _notaElegida; }
             set { SetValue(ref _notaElegida, value); }
         }
+        public bool Activador
+        {
+            get { return _activador; }
+            set { SetValue(ref _activador, value); }
+        }
         #endregion
         #region PROCESOS
         public async Task CambiarNota()
@@ -57,9 +63,11 @@ namespace MiniProyectoNotasSAEG.ViewModel
         }
         public async Task EliminarNota()
         {
+            Activador = true;
             var funcion = new DatosNotas();
             await funcion.EliminarNota(NotaElegida.IdNota);
             await DisplayAlert("Listo!", "Su Nota a sido eliminada exitosamente", "continuar");
+            Activador = false;
             await VolverAlMenuPrincipal();
         }
         public async Task VolverAlMenuPrincipal()

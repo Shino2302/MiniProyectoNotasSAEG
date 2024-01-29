@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MiniProyectoNotasSAEG.MainPage"
+             xmlns:disparador="clr-namespace:MiniProyectoNotasSAEG.Triggers"
              NavigationPage.HasNavigationBar="False">
+    
     <ContentPage.Resources>
         <Style TargetType="Button">
             <Style.Triggers>
@@ -32,50 +34,50 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Frame Margin="20,20"
-                           CornerRadius="10"
-                           Padding="5,10,5,-15">
-                        <StackLayout HorizontalOptions="Center">
-                            <Label Text="{Binding TituloNota}"
-                                   TextColor="Black"
-                                   FontAttributes="Bold,Italic"
-                                   FontSize="20"
-                                   Margin="0,0,0,0"
-                                   HorizontalOptions="Center"/>
-                            <ScrollView HeightRequest="80"
-                                        WidthRequest="180"
-                                        HorizontalOptions="Center"
-                                        IsEnabled="False">
-                                <Editor Text="{Binding Nota}"
-                                        TextColor="Black"
-                                        HorizontalOptions="Center"
-                                        FontSize="16"
-                                        FontAttributes="Italic"
-                                        IsReadOnly="True"
-                                        />
-                            </ScrollView>
-                            <Line X1="200"
-                                  Y1="2"
-                                  X2="0"
-                                  Y2="2"
-                                  Stroke="Black"
-                                  HorizontalOptions="Center"
-                                  Margin="0,-50,0,10"/>
-                            <Line X1="200"
-                                  Y1="2"
-                                  X2="0"
-                                  Y2="2"
-                                  Stroke="Black"
-                                  HorizontalOptions="Center"
-                                  Margin="0,3,0,10"/>
-                            <Line X1="200"
-                                  Y1="2"
-                                  X2="0"
-                                  Y2="2"
-                                  Stroke="Black"
-                                  HorizontalOptions="Center"
-                                  Margin="0,8,0,10"/>
-                        </StackLayout>
-                    </Frame>
+                               CornerRadius="10"
+                               Padding="5,10,5,-15">
+                            <StackLayout HorizontalOptions="Center">
+                                <Label Text="{Binding TituloNota}"
+                                       TextColor="Black"
+                                       FontAttributes="Bold,Italic"
+                                       FontSize="20"
+                                       Margin="0,0,0,0"
+                                       HorizontalOptions="Center"/>
+                                <ScrollView HeightRequest="80"
+                                            WidthRequest="180"
+                                            HorizontalOptions="Center"
+                                            IsEnabled="False">
+                                    <Editor Text="{Binding Nota}"
+                                            TextColor="Black"
+                                            HorizontalOptions="Center"
+                                            FontSize="16"
+                                            FontAttributes="Italic"
+                                            IsReadOnly="True"
+                                            />
+                                </ScrollView>
+                                <Line X1="200"
+                                      Y1="2"
+                                      X2="0"
+                                      Y2="2"
+                                      Stroke="Black"
+                                      HorizontalOptions="Center"
+                                      Margin="0,-50,0,10"/>
+                                <Line X1="200"
+                                      Y1="2"
+                                      X2="0"
+                                      Y2="2"
+                                      Stroke="Black"
+                                      HorizontalOptions="Center"
+                                      Margin="0,3,0,10"/>
+                                <Line X1="200"
+                                      Y1="2"
+                                      X2="0"
+                                      Y2="2"
+                                      Stroke="Black"
+                                      HorizontalOptions="Center"
+                                      Margin="0,8,0,10"/>
+                            </StackLayout>
+                        </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

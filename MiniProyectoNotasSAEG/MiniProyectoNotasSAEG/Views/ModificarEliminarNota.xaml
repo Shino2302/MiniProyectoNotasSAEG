@@ -1,8 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:disparador="clr-namespace:MiniProyectoNotasSAEG.Triggers"
              x:Class="MiniProyectoNotasSAEG.Views.ModificarEliminarNota"
              NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <Style TargetType="Frame">
+            <Style.Triggers>
+                <MultiTrigger TargetType="Frame">
+                    <MultiTrigger.Conditions>
+                        <BindingCondition Binding="{Binding Activador}" Value="True"/>
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.EnterActions>
+                        <disparador:TriggerDeEventos activacion="True"/>
+                    </MultiTrigger.EnterActions>
+                    <MultiTrigger.ExitActions>
+                        <disparador:TriggerDeEventos activacion="False"/>
+                    </MultiTrigger.ExitActions>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout BackgroundColor="#FFAA79">
             <Grid>
